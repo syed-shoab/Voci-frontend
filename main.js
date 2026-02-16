@@ -1,4 +1,4 @@
-const API = "https://voci-backend.onrender.com/";
+const API = "https://voci-backend.onrender.com";
 
 document.getElementById("register-btn").addEventListener("click", register);
 document.getElementById("login-btn").addEventListener("click", login);
