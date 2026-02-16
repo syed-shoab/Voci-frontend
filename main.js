@@ -8,6 +8,11 @@ async function register() {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
+  if (!username || !password) {
+    alert("Please enter username and password");
+    return;
+  }
+
   const res = await fetch(`${API}/register`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
